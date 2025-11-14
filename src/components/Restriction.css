@@ -1,0 +1,72 @@
+.restriction-container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.restriction-label {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	font-size: var(--fs16);
+	padding: var(--sz8) var(--sz12);
+	background-color: var(--primary600);
+	border-radius: var(--sz8);
+	cursor: pointer;
+	user-select: none;
+}
+
+.restriction-label-text {
+	display: flex;
+	align-items: center;
+}
+
+.restriction-label-indicators {
+	display: flex;
+	align-items: center;
+	gap: var(--sz8);
+}
+
+.restriction-label:hover .restriction-label-remove-icon {
+	opacity: 1;
+}
+
+.restriction-label-remove-icon {
+	opacity: 0;
+	height: var(--fs20);
+	width: auto;
+	stroke-width: 2;
+	color: var(--red300);
+	transition: opacity 0.2s ease, color 0.3s ease;
+	&:hover {
+		color: var(--red400);
+	}
+}
+
+.restriction-content {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--primary900);
+	padding: var(--sz12) var(--sz16);
+	margin: 0 var(--sz12);
+	border-radius: 0 0 var(--sz8) var(--sz8);
+	gap: var(--sz8);
+}
+
+.restriction-atom {
+	transition: opacity 0.3s ease;
+	&.disabled {
+		opacity: 0.5;
+	}
+	& > * {
+		width: 100%;
+		justify-content: space-between;
+	}
+}
+
+.restriction-atom-value {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}

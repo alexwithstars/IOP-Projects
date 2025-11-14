@@ -1,0 +1,32 @@
+.solution-container {
+	width: 100%;
+	padding: var(--sz16);
+	display: flex;
+	gap: var(--sz16);
+	background-color: var(--primary700);
+	border-top: 2px solid var(--primary300);
+	border-left: 2px solid var(--primary300);
+}
+
+.solution-atom {
+	display: flex;
+	align-items: center;
+	border: 2px solid var(--primary400);
+	overflow: hidden;
+	border-radius: var(--sz4);
+	& > * {
+		padding: var(--sz4) var(--sz8);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: var(--sz20);
+	}
+	& > .solution-atom-variable {
+		height: 100%;
+		background-color: var(--primary600);
+	}
+	& > .solution-atom-coefficient {
+		height: 100%;
+		background-color: var(--primary800);
+	}
+}

@@ -1,0 +1,27 @@
+.table-container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+
+.table-title {
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: var(--fs20);
+	padding: var(--sz12) var(--sz12);
+	background-color: var(--primary800);
+}
+
+.table-results-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: var(--sz32);
+	gap: var(--sz16);
+	width: 100%;
+	flex-grow: 1;
+	overflow: auto;
+	scrollbar-width: thin;
+	scrollbar-color: var(--primary600) var(--primary800);
+}

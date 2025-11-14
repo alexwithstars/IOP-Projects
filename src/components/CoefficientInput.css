@@ -1,0 +1,30 @@
+.coefficient-input {
+	display: flex;
+	font-size: inherit;
+	align-items: center;
+	gap: var(--sz4);
+}
+
+.coefficient-input-value {
+	outline: none;
+	background-color: var(--primary900);
+	font-size: inherit;
+	color: inherit;
+	vertical-align: bottom;
+	box-sizing: content-box;
+	width: var(--size, var(--sz64));
+	padding: var(--sz4) var(--sz8);
+	border: 2px solid var(--primary500);
+	border-radius: var(--sz4);
+	&::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+}
+
+.coefficient-variable {
+	translate: 0 .1em;
+	& > sub {
+		font-size: .7em;
+	}
+}

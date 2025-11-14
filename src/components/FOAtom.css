@@ -1,0 +1,13 @@
+.fo-atom-container {
+	display: flex;
+	font-size: var(--fs18);
+	gap: var(--sz8);
+	border-radius: var(--sz4);
+	align-items: center;
+	transition: outline-color 0.3s;
+	outline: 2px solid transparent;
+	outline-offset: var(--sz4);
+	&:hover {
+		outline-color: var(--primary700);
+	}
+}

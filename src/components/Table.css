@@ -1,0 +1,36 @@
+.simplex-table-result {
+	--tborder: 2px solid var(--primary500);
+	border-spacing: 0;
+	width: 100%;
+	border-radius: var(--sz8);
+	border: var(--tborder);
+}
+
+.simplex-table-result th,
+.simplex-table-result td {
+	padding: 8px;
+	width: 100vw;
+	&:has(~&) {
+		border-right: var(--tborder);
+	}
+	&:is(td) {
+		text-align: right;
+	}
+}
+
+.simplex-table-result tr {
+	&:has(~&){
+		& td, & th {
+			border-bottom: var(--tborder);
+		}
+	}
+}
+.simplex-table-result thead tr {
+	& td, & th {
+		border-bottom: var(--tborder);
+	}
+}
+
+.simplex-table-result th {
+	font-weight: bold;
+}

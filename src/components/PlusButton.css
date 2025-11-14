@@ -1,0 +1,20 @@
+.plus-button {
+	background-color: transparent;
+	color: var(--primary100);
+	border: none;
+	outline: none;
+	border-radius: var(--sz4);
+	line-height: .1;
+	width: fit-content;
+	font-size: var(--fs24);
+	&.active {
+		cursor: pointer;
+		padding: var(--sz8);
+		aspect-ratio: 1;
+		background-color: var(--primary600);
+		transition: background-color 0.3s;
+		&:hover {
+			background-color: var(--primary500);
+		}
+	}
+}

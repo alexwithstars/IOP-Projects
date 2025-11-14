@@ -1,0 +1,29 @@
+.restrictions-container {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	width: 100%;
+	align-items: center;
+}
+
+.restrictions-title {
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: var(--fs20);
+	padding: var(--sz12) var(--sz12);
+	background-color: var(--primary700);
+}
+
+.restrictions-wrapper {
+	display: flex;
+	flex-direction: column;
+	padding: var(--sz16) var(--sz24);
+	align-items: center;
+	gap: var(--sz16);
+	width: 100%;
+	height: 0;
+	flex-grow: 1;
+	overflow-y: scroll;
+	scrollbar-width: thin;
+	scrollbar-color: var(--primary600) var(--primary800);
+}

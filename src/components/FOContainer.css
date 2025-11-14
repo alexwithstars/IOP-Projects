@@ -1,0 +1,28 @@
+.fo-container {
+	width: 100%;
+	display: flex;
+	/* flex-direction: column; */
+}
+
+.fo-title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--primary700);
+	padding: var(--sz8) var(--sz16);
+	border-radius: var(--sz8) 0 0 var(--sz8);
+	font-size: var(--fs20);
+	font-weight: normal;
+}
+
+.fo-wrapper {
+	display: flex;
+	gap: var(--sz12);
+	width: 100%;
+	background-color: var(--primary800);
+	padding: var(--sz16);
+	border-radius: 0 var(--sz8) var(--sz8) 0;
+	overflow-x: auto;
+	scrollbar-width: thin;
+	scrollbar-color: var(--primary600) var(--primary800);
+}
