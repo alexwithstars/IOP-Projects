@@ -11,7 +11,7 @@ export const Solution = (): ReactElement => {
         return (
           <div key={`sa${index}`} className='solution-atom'>
             <span className='solution-atom-variable'>
-              <div>X<sub>{index + 1}</sub></div>
+              <div>X<sub>{index}</sub></div>
             </span>
             <span className='solution-atom-coefficient'>{coefficient.toLocaleString('fullwide', { maximumFractionDigits: 3 })}</span>
           </div>

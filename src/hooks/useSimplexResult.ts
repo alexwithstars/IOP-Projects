@@ -139,13 +139,14 @@ export const useSimplexResult = (): UseSimplexResultReturn => {
     })
 
     // Calculate solution array
-    const solutionArray: UseSimplexResultReturn['solution'] = Array(foAtoms.length).fill(0)
+    const solutionArray: UseSimplexResultReturn['solution'] = Array(foAtoms.length + 1).fill(0)
     const lastTable = results[results.length - 1].table
     outVariables.forEach((varIdx, rIdx) => {
       if (varIdx == null) return
       const coefficient = lastTable[rIdx + 1].at(-1) ?? 0
-      solutionArray[varIdx] = coefficient
+      solutionArray[varIdx + 1] = coefficient
     })
+    solutionArray[0] = lastTable[0].at(-1) ?? 0
     setSolution(solutionArray)
   }, [foAtoms, restrictions])
 
