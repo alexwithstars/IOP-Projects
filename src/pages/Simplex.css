@@ -1,0 +1,43 @@
+.simplex-container {
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--gray900);
+}
+
+.simplex-function {
+	width: 100%;
+	padding: var(--sz24) var(--sz32);
+}
+
+.simplex-wrapper {
+	display: flex;
+	flex-grow: 1;
+	width: 100%;
+}
+
+.simplex-restrictions {
+	background-color: var(--primary800);
+	display: flex;
+	flex-direction: column;
+	width: clamp(300px, 40%, 400px);
+	flex-shrink: 0;
+}
+
+.simplex-results {
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+}
+
+.simplex-table {
+	height: 0;
+	flex-grow: 1;
+	background-color: var(--primary900);
+}
+
+.simplex-solution {
+	width: 100%;
+}
