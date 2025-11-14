@@ -1,0 +1,28 @@
+{
+	"compilerOptions": {
+		// language and environment
+		"target": "ES2022",
+		"lib": ["ES2022", "DOM", "DOM.Iterable"],
+		"module": "ESNext",
+		"moduleResolution": "bundler",
+		"jsx": "react-jsx",
+
+		// type checking
+		"strict": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitReturns": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+
+		// bundler-friendly
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"types": ["vite/client"],
+		"skipLibCheck": true,
+
+		// no TS emit; Vite handles builds
+		"noEmit": true,
+		"useDefineForClassFields": true
+	},
+	"include": ["src"]
+}
