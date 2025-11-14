@@ -7,11 +7,6 @@ export interface SimplexState {
   outVariables: Array<number | null>
 }
 
-// export interface SolutionAtom {
-//   coefficient: number
-//   index: number
-// }
-
 export type SimplexResult = SimplexState[]
 
 export interface SimplexResultContextProps {
