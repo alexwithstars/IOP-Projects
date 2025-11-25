@@ -9,21 +9,18 @@ export function Home (): ReactElement {
       <main className='home-content'>
         <h1 className='home-title'>Investigación de Operaciones</h1>
         <section className='home-page-cards'>
-          <PageCard
-            title='Simplex'
-            to={ROUTES.SIMPLEX.path}
-            icon={ROUTES.SIMPLEX.icon}
-          />
-          <PageCard
-            title='Dijkstra'
-            to={ROUTES.DIJKSTRA.path}
-            icon={ROUTES.DIJKSTRA.icon}
-          />
-          <PageCard
-            title='Húngaro'
-            to={ROUTES.HUNGARIAN.path}
-            icon={ROUTES.HUNGARIAN.icon}
-          />
+          {
+            Object.values(ROUTES).flatMap(route => {
+              return route.element !== Home
+                ? [<PageCard
+                    key={`${route.path}-card`}
+                    title={route.name}
+                    to={route.path}
+                    icon={route.icon}
+                   />]
+                : []
+            })
+          }
         </section>
       </main>
     </section>
