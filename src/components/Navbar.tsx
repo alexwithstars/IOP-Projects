@@ -1,5 +1,5 @@
 import './Navbar.css'
-import { ROUTES } from '../const/routes'
+import { ROUTES } from '@/const/routes'
 import { NavLink } from 'react-router'
 
 interface NavbarProps {

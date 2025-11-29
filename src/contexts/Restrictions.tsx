@@ -1,5 +1,5 @@
 import { createContext, type PropsWithChildren, useEffect, useState } from 'react'
-import { useFO } from '../hooks/useFO'
+import { useFO } from '@/hooks/useFO'
 import type { Restriction, RestrictionAtom, RestrictionBase, RestrictionsContextProps } from '../types/Restrictions'
 
 export const RestrictionsContext = createContext<RestrictionsContextProps | null>(null)

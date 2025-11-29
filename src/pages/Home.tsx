@@ -1,6 +1,6 @@
-import { PageCard } from '../components/PageCard'
+import { PageCard } from '@/components/PageCard'
 import './Home.css'
-import { ROUTES } from '../const/routes'
+import { ROUTES } from '@/const/routes'
 import { ReactElement } from 'react'
 
 export function Home (): ReactElement {

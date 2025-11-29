@@ -1,5 +1,5 @@
 import { ReactElement } from 'react'
-import { useSimplexResult } from '../hooks/useSimplexResult'
+import { useSimplexResult } from '@/hooks/useSimplexResult'
 import { Table } from './Table'
 import './TableContainer.css'
 

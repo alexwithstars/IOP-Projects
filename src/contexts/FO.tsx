@@ -1,5 +1,5 @@
 import { createContext, PropsWithChildren, useState } from 'react'
-import type { FOAtomBase, FOAtom, FOContextProps } from '../types/FO'
+import type { FOAtomBase, FOAtom, FOContextProps } from '@/types/FO'
 
 export const FOContext = createContext<FOContextProps | null>(null)
 

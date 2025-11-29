@@ -1,4 +1,4 @@
-import { SimplexState } from '../types/SimplexResult'
+import { SimplexState } from '@/types/SimplexResult'
 import './Table.css'
 
 interface TableProps {

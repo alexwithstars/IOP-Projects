@@ -1,8 +1,8 @@
 import './FOAtom.css'
-import { FOAtom as FOAtomType } from '../types/FO'
-import { useFO } from '../hooks/useFO'
-import { CoefficientInput } from './CoefficientInput'
-import { PlusButton } from './PlusButton'
+import { FOAtom as FOAtomType } from '@/types/FO'
+import { useFO } from '@/hooks/useFO'
+import { CoefficientInput } from '../CoefficientInput'
+import { PlusButton } from '../PlusButton'
 
 interface FOAtomProps {
   last: boolean

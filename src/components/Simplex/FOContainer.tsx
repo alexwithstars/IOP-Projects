@@ -1,5 +1,5 @@
 import { ReactElement, useEffect, useRef, useCallback } from 'react'
-import { useFO } from '../hooks/useFO'
+import { useFO } from '@/hooks/useFO'
 import { FOAtom } from './FOAtom'
 import './FOContainer.css'
 

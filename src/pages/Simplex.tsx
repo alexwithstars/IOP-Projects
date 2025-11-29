@@ -1,13 +1,13 @@
 import { ReactElement } from 'react'
 import './Simplex.css'
-import { Navbar } from '../components/Navbar'
-import { FOContainer } from '../components/FOContainer'
-import { FOProvider } from '../contexts/FO'
-import { RestrictionsContainer } from '../components/RestrictionsContainer'
-import { RestrictionsProvider } from '../contexts/Restrictions'
-import { SimplexResultProvider } from '../contexts/SimplexResult'
-import { TableContainer } from '../components/TableContainer'
-import { Solution } from '../components/Solution'
+import { Navbar } from '@/components/Navbar'
+import { FOContainer } from '@/components/Simplex/FOContainer'
+import { FOProvider } from '@/contexts/FO'
+import { RestrictionsContainer } from '@/components/Simplex/RestrictionsContainer'
+import { RestrictionsProvider } from '@/contexts/Restrictions'
+import { SimplexResultProvider } from '@/contexts/SimplexResult'
+import { TableContainer } from '@/components/Simplex/TableContainer'
+import { Solution } from '@/components/Simplex/Solution'
 
 export function Simplex (): ReactElement {
   return (

@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import './Restriction.css'
-import type { Restriction as RestrictionType } from '../types/Restrictions'
-import { FOAtom } from '../types/FO'
-import { useRestrictions } from '../hooks/useRestrictions'
-import { CoefficientInput } from './CoefficientInput'
+import type { Restriction as RestrictionType } from '@/types/Restrictions'
+import { FOAtom } from '@/types/FO'
+import { useRestrictions } from '@/hooks/useRestrictions'
+import { CoefficientInput } from '../CoefficientInput'
 import { IconCircleMinus } from '@tabler/icons-react'
 
 interface RestrictionProps {
@@ -63,7 +63,7 @@ export const Restriction: React.FC<RestrictionProps> = ({ restriction, index }) 
       {expand && (
         <div className='restriction-content'>
           {restriction.atoms.map(({ coefficient, variableId }, index) => (
-            <div key={'ra' + variableId} className={`restriction-atom ${coefficient === 0 ? 'disabled' : ''}`}>
+            <div key={`ra${variableId}`} className={`restriction-atom ${coefficient === 0 ? 'disabled' : ''}`}>
               <CoefficientInput
                 onChange={newValue => handleCoefficientChange(newValue, variableId)}
                 index={index}

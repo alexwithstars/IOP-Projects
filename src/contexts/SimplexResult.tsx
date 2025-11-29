@@ -1,5 +1,5 @@
 import { createContext, PropsWithChildren, useState } from 'react'
-import { SimplexResultContextProps, SimplexState } from '../types/SimplexResult'
+import { SimplexResultContextProps, SimplexState } from '@/types/SimplexResult'
 
 export const SimplexResultContext = createContext<SimplexResultContextProps | null>(null)
 

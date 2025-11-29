@@ -1,10 +1,10 @@
-import { SimplexResultContext } from '../contexts/SimplexResult'
+import { SimplexResultContext } from '@/contexts/SimplexResult'
 import { useCallback, useContext, useEffect, useState } from 'react'
-import { SimplexState, UseSimplexResultReturn } from '../types/SimplexResult'
+import { SimplexState, UseSimplexResultReturn } from '@/types/SimplexResult'
 import { useFO } from './useFO'
 import { useRestrictions } from './useRestrictions'
-import { Restriction } from '../types/Restrictions'
-import { FOAtom } from '../types/FO'
+import { Restriction } from '@/types/Restrictions'
+import { FOAtom } from '@/types/FO'
 
 interface calcReturn {
   table: SimplexState['table']

@@ -1,9 +1,9 @@
 import { IconBuildingWarehouse, IconHome, IconSitemap, IconTableDashed } from '@tabler/icons-react'
 import type { Icon } from '@tabler/icons-react'
-import { Inventories } from '../pages/Inventories'
-import { Simplex } from '../pages/Simplex'
-import { CPMPage } from '../pages/CPMPage'
-import { Home } from '../pages/Home'
+import { Inventories } from '@/pages/Inventories'
+import { Simplex } from '@/pages/Simplex'
+import { CPMPage } from '@/pages/CPMPage'
+import { Home } from '@/pages/Home'
 
 interface Route {
   name: string

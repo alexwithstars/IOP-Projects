@@ -1,6 +1,6 @@
 import { useContext } from 'react'
-import { RestrictionsContext } from '../contexts/Restrictions'
-import type { UseRestrictionsReturn } from '../types/Restrictions'
+import { RestrictionsContext } from '@/contexts/Restrictions'
+import type { UseRestrictionsReturn } from '@/types/Restrictions'
 
 export function useRestrictions (): UseRestrictionsReturn {
   const context = useContext(RestrictionsContext)

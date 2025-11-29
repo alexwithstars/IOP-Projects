@@ -1,5 +1,5 @@
-import { useRestrictions } from '../hooks/useRestrictions'
-import { PlusButton } from './PlusButton'
+import { useRestrictions } from '@/hooks/useRestrictions'
+import { PlusButton } from '../PlusButton'
 import { Restriction } from './Restriction'
 import './RestrictionsContainer.css'
 
