@@ -18,12 +18,12 @@
 	font-weight: bold;
 	color: var(--title-color, var(--primary200));
 	font-size: var(--fs24);
-	letter-spacing: 2px;
+	letter-spacing: var(--sz2);
 }
 
 .nav-link {
 	color: var(--nav-color);
-	--under-sz: 2px;
+	--under-sz: var(--sz2)
 	padding-bottom: calc(2 * var(--under-sz));
 	text-decoration: none;
 	display: flex;

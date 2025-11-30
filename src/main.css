@@ -26,6 +26,7 @@
 
 :root {
 	/* sizing and spacing */
+	--sz2: 2px;
 	--sz4: 4px;
 	--sz8: 8px;
 	--sz12: 12px;

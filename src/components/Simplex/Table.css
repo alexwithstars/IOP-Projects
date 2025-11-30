@@ -1,5 +1,5 @@
 .simplex-table-result {
-	--tborder: 2px solid var(--primary500);
+	--tborder: var(--sz2) solid var(--primary500);
 	border-spacing: 0;
 	width: 100%;
 	border-radius: var(--sz8);

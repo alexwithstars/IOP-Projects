@@ -4,14 +4,14 @@
 	display: flex;
 	gap: var(--sz16);
 	background-color: var(--primary700);
-	border-top: 2px solid var(--primary300);
-	border-left: 2px solid var(--primary300);
+	border-top: var(--sz2) solid var(--primary300);
+	border-left: var(--sz2) solid var(--primary300);
 }
 
 .solution-atom {
 	display: flex;
 	align-items: center;
-	border: 2px solid var(--primary400);
+	border: var(--sz2) solid var(--primary400);
 	overflow: hidden;
 	border-radius: var(--sz4);
 	& > * {
