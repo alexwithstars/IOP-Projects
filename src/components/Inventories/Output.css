@@ -1,0 +1,53 @@
+.output-container {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	height: 0;
+	overflow-y: auto;
+	scrollbar-width: thin;
+	scrollbar-color: var(--primary600) var(--primary800);
+	gap: var(--sz16);
+	padding: var(--sz32);
+}
+
+.output-title {
+	font-family: Montserrat, sans-serif;
+	font-size: var(--fs24);
+	font-weight: bold;
+	padding-bottom: var(--sz16);
+	border-bottom: var(--sz2) solid var(--primary600);
+}
+
+.output-content {
+	display: flex;
+	flex-direction: column;
+	gap: var(--sz16);
+	padding: var(--sz8) 0;
+}
+
+.output-item {
+	display: flex;
+	flex-direction: column;
+	padding: var(--sz16);
+	background-color: var(--primary700);
+	border-radius: var(--sz8);
+	border: var(--sz2) solid var(--primary600);
+}
+
+.output-item-label {
+	font-size: var(--fs14);
+	color: var(--primary300);
+}
+
+.output-item-value {
+	font-family: Montserrat, sans-serif;
+	font-size: var(--fs20);
+	font-weight: bold;
+	color: var(--primary100);
+	margin-top: var(--sz8);
+}
+
+.output-item-value-unit {
+	font-size: var(--fs12);
+	margin-left: var(--sz4);
+}
