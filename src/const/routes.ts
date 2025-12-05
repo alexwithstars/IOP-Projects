@@ -32,7 +32,7 @@ export const ROUTES: Record<string, Route> = {
     element: CPMPage
   },
   INVENTORIES: {
-    name: 'Inventories',
+    name: 'Inventarios',
     path: '/inventories',
     icon: IconBuildingWarehouse,
     element: Inventories
