@@ -1,0 +1,95 @@
+.graph-canvas-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary900);
+  overflow: hidden;
+}
+
+.graph-canvas {
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+}
+
+.graph-canvas:active {
+  cursor: grabbing;
+}
+
+.graph-info {
+  position: absolute;
+  top: var(--sz16);
+  right: var(--sz16);
+  background-color: rgba(30, 41, 59, 0.95);
+  padding: var(--sz16);
+  border-radius: var(--sz8);
+  border: 2px solid var(--primary600);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sz12);
+  max-width: 300px;
+}
+
+.graph-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sz4);
+}
+
+.graph-info-label {
+  font-size: var(--sz12);
+  font-weight: 500;
+  color: var(--primary300);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.graph-info-value {
+  font-size: var(--sz24);
+  font-weight: 700;
+  color: var(--primary100);
+}
+
+.critical-path-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sz6);
+}
+
+.critical-path-badge {
+  padding: var(--sz4) var(--sz8);
+  background-color: var(--red600);
+  color: var(--red100);
+  border-radius: var(--sz4);
+  font-size: var(--sz12);
+  font-weight: 600;
+}
+
+.graph-controls {
+  position: absolute;
+  bottom: var(--sz16);
+  right: var(--sz16);
+  display: flex;
+  gap: var(--sz8);
+}
+
+.graph-controls button {
+  padding: var(--sz8) var(--sz16);
+  background-color: var(--primary700);
+  color: var(--primary100);
+  border: 1px solid var(--primary600);
+  border-radius: var(--sz4);
+  cursor: pointer;
+  font-size: var(--sz14);
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.graph-controls button:hover {
+  background-color: var(--primary600);
+  border-color: var(--primary500);
+}
+
+.graph-controls button:active {
+  transform: scale(0.95);
+}

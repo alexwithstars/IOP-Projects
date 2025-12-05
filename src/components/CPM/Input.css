@@ -1,0 +1,178 @@
+.cpm-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sz24);
+  padding: var(--sz24);
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.cpm-input-new-task {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sz16);
+  padding: var(--sz16);
+  background-color: var(--primary700);
+  border-radius: var(--sz8);
+}
+
+.cpm-input-task-basic {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sz12);
+}
+
+.input-item-label {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sz4);
+}
+
+.input-item-label > span {
+  font-size: var(--sz14);
+  font-weight: 500;
+  color: var(--primary200);
+}
+
+.cpm-task-name-input {
+  padding: var(--sz8) var(--sz12);
+  background-color: var(--primary800);
+  border: 1px solid var(--primary600);
+  border-radius: var(--sz4);
+  color: var(--primary100);
+  font-size: var(--sz16);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.cpm-task-name-input:focus {
+  border-color: var(--primary400);
+}
+
+.cpm-task-name-input::placeholder {
+  color: var(--primary500);
+}
+
+.cpm-predecessors-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sz8);
+}
+
+.cpm-predecessors-title {
+  font-size: var(--sz14);
+  font-weight: 500;
+  color: var(--primary200);
+}
+
+.cpm-predecessors-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sz8);
+  max-height: 120px;
+  overflow-y: auto;
+  padding: var(--sz12);
+  background-color: var(--primary800);
+  border-radius: var(--sz8);
+  border: 1px solid var(--primary600);
+}
+
+.cpm-predecessor-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sz6);
+  padding: var(--sz6) var(--sz12);
+  background-color: var(--primary700);
+  border: 2px solid var(--primary600);
+  border-radius: var(--sz16);
+  cursor: pointer;
+  font-size: var(--sz14);
+  font-weight: 500;
+  color: var(--primary300);
+  transition: all 0.2s;
+  outline: none;
+}
+
+.cpm-predecessor-badge:hover {
+  background-color: var(--primary600);
+  border-color: var(--primary500);
+  color: var(--primary200);
+  transform: translateY(-1px);
+}
+
+.cpm-predecessor-badge.selected {
+  background-color: var(--primary500);
+  border-color: var(--primary400);
+  color: var(--primary100);
+  font-weight: 600;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.cpm-predecessor-badge.selected:hover {
+  background-color: var(--primary400);
+  border-color: var(--primary300);
+}
+
+.cpm-tasks-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sz12);
+}
+
+.cpm-tasks-list-title {
+  font-size: var(--sz16);
+  font-weight: 600;
+  color: var(--primary100);
+  margin: 0;
+}
+
+.cpm-empty-message {
+  text-align: center;
+  color: var(--primary400);
+  font-size: var(--sz14);
+  padding: var(--sz16);
+}
+
+.cpm-task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: var(--sz12);
+  background-color: var(--primary700);
+  border-radius: var(--sz8);
+  gap: var(--sz12);
+}
+
+.cpm-task-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sz4);
+  flex: 1;
+}
+
+.cpm-task-name {
+  font-size: var(--sz16);
+  font-weight: 600;
+  color: var(--primary100);
+}
+
+.cpm-task-duration {
+  font-size: var(--sz14);
+  color: var(--primary300);
+}
+
+.cpm-task-predecessors {
+  font-size: var(--sz12);
+  color: var(--primary400);
+}
+
+.cpm-task-remove {
+  cursor: pointer;
+  color: var(--primary400);
+  transition: color 0.2s;
+  flex-shrink: 0;
+}
+
+.cpm-task-remove:hover {
+  color: var(--red500);
+}
