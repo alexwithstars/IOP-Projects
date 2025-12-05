@@ -12,7 +12,7 @@
 	color: inherit;
 	vertical-align: bottom;
 	box-sizing: content-box;
-	width: var(--size, var(--sz64));
+	width: var(--size, 100%);
 	padding: var(--sz4) var(--sz8);
 	border: var(--sz2) solid var(--primary500);
 	border-radius: var(--sz4);

@@ -4,10 +4,14 @@ import './CoefficientInput.css'
 interface CoefficientInputProps {
   value?: number
   index?: number
+  fit?: boolean
   onChange: (newValue: number) => void
+  validation?: (value: number) => boolean
 }
 
-export const CoefficientInput: React.FC<CoefficientInputProps> = ({ value, index = -1, onChange }) => {
+export const CoefficientInput: React.FC<CoefficientInputProps> = ({
+  value, index = -1, onChange, validation = () => true, fit = true
+}) => {
   const [refinedStringValue, setRefinedStringValue] = useState(() => {
     if (value === undefined || value === 0) return ''
     return value.toString()
@@ -27,9 +31,11 @@ export const CoefficientInput: React.FC<CoefficientInputProps> = ({ value, index
 
     if (!checkValidity(inputValue)) return
 
+    const newCoefficient = parseFloat(inputValue)
+    if (!isNaN(newCoefficient) && !validation(newCoefficient)) return
+
     setRefinedStringValue(inputValue)
 
-    const newCoefficient = parseFloat(inputValue)
     if (!isNaN(newCoefficient)) {
       onChange(newCoefficient)
     } else {
@@ -55,7 +61,7 @@ export const CoefficientInput: React.FC<CoefficientInputProps> = ({ value, index
     <div className='coefficient-input'>
       <input
         className='coefficient-input-value'
-        style={atomStyle}
+        style={fit ? atomStyle : {}}
         value={refinedStringValue}
         onInput={handleInputChange}
         onBlur={handleInputBlur}
